@@ -1,0 +1,27 @@
+<html lang="en">
+    {% load static %}
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fst_app</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+</head>
+<body>
+    <img src="{% static "images/1d.GIF" %}" alt="hvjvj" srcset="">
+    <p>{{ name }}</p>
+    <div>
+
+        {% if name %}
+
+        {% for i in name %}
+        <h1>{{i.name}}</h1>
+        <h1>{{i.date}}</h1>
+        {% endfor %}
+        {% endif %}
+    </div>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi itaque fugiat hic, aspernatur totam veritatis voluptatem rerum minima, temporibus dolorum eos molestiae magnam quod neque ad! Distinctio, obcaecati dignissimos?</p>
+
+</body>
+</html>
